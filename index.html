@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UMBC IS — Home (Prototype)</title>
+<style>
+  body {
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial;
+    margin: 0;
+    background: #f7fafc;
+    color: #111;
+    text-align: center; /* Centers all text */
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: 24px auto;
+    padding: 24px;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers header content horizontally */
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .logo {
+    width: 64px;
+    height: 64px;
+    background: #fdb515;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+  }
+
+  nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #fdb515;
+    font-weight: 600;
+  }
+
+  .hero {
+    background: white;
+    padding: 28px;
+    border-radius: 12px;
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .cta {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 16px;
+    background: #fdb515;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    margin-top: 18px;
+  }
+
+  .card {
+    background: white;
+    padding: 16px;
+    border-radius: 10px;
+  }
+
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <img src="umbclogo2.png" alt="UMBC Logo 2" width="100" height="100">
+    <div>
+      <h1 style="margin:0">Department of Information Systems</h1>
+    </div>
+    <nav style="margin-left:auto">
+      <a href="index.html">Home</a>
+      <a href="undergrad.html">Undergraduate IS</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" role="banner" aria-label="Introduction">
+    <div class="text">
+      <h1>Welcome to Department of Information Systems</h1>
+      <p>Welcome to the Department of Information Systems at UMBC. Our interdisciplinary program helps students develop in demand skills, preparing them for careers in IT and IS.</p>
+      <a class="cta" href="undergrad.html">Explore the IS Program</a>
+    </div>
+    <img src="umbclogo.png" alt="UMBC Logo" style="width:150px;height:auto;">
+  </section>
+
+  <section class="grid" aria-label="Highlights">
+    <article class="card">
+      <h3>Courses</h3>
+      <p>Courses in databases, networking, analytics, and project management.</p>
+    </article>
+    <article class="card">
+      <h3>Careers</h3>
+      <p>Internships and employer connections across industries.</p>
+    </article>
+    <article class="card">
+      <h3>Student Projects</h3>
+      <p>Hands-on team projects and capstones with real clients.</p>
+    </article>
+  </section>
+
+</div>
+</body>
+</html>

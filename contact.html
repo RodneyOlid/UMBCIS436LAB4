@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UMBC IS — Contact</title>
+<style>
+  body{
+    font-family:system-ui,Arial;
+    margin:0;
+    background:#f7fafc;
+    color:#111
+  }
+
+  .container{
+    max-width:800px;
+    margin:20px auto;
+    padding:20px
+  }
+
+  .card{background:white;
+    padding:18px;
+    border-radius:10px;
+    box-shadow:0 1px 2px rgba(0,0,0,0.04)
+  }
+
+  label{display:block;
+    margin-top:10px;
+    font-weight:600
+  }
+
+  input,textarea{
+    width:100%;
+    padding:10px;
+    margin-top:6px;
+    border:1px solid #e5e7eb;
+    border-radius:6px
+  }
+
+  button{
+    margin-top:12px;
+    padding:10px 14px;
+    background:#fdb515;
+    color:white;
+    border:none;
+    border-radius:8px
+  }
+
+  .info{
+    margin-top:12px;
+    color:#6b7280
+    }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <h1>Contact the IS Department</h1>
+    <p style="color:#6b7280">Questions about the IS program, advising, or events? Send us a message.</p>
+
+    <form action="#" onsubmit="alert('This is a static prototype. Replace with backend or form endpoint.') ; return false;">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" required>
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button type="submit">Send message</button>
+    </form>
+
+    <div class="info">
+      <div><strong>Office:</strong> ITE Building Suite 404</div>
+      <div><strong>Phone:</strong> (123) 456-7898</div>
+      <div><strong>Email:</strong> isdept@umbc.edu</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
